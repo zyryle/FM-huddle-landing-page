@@ -23,7 +23,7 @@ Users should be able to:
 
 ![](./screenshot/desktop.png)
 
-<div style="text-align: center"><img src="./screenshot/mobile.png" alt="mobile design"></div>
+<p align= "center"><img src="./screenshot/mobile.png" alt="mobile design"></p>
 <!-- ![](./screenshot/mobile.png) -->
 
 ### Links

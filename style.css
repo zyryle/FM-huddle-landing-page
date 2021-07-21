@@ -13,7 +13,7 @@
 ::after {
   padding: 0;
   margin: 0;
-  box-sizing: border;
+  box-sizing: inherit;
 }
 
 html {
@@ -21,5 +21,155 @@ html {
 }
 
 body {
+  box-sizing: border;
   font-family: var(--font-body);
+  background: var(--primary-violet) url(./images/bg-desktop.svg) no-repeat;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: var(--font-body);
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-family: var(--font-heading);
+  font-weight: 600;
+}
+
+header {
+  /* background-color: slateblue; */
+  padding: 4rem 10rem;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0rem 10rem;
+}
+
+.hero-content {
+  padding: 5rem;
+}
+
+.hero-content p {
+  margin: 2rem 0 3rem 0;
+  opacity: 80%;
+}
+
+button {
+  padding: 2rem 8rem;
+  border-radius: 50px;
+  outline: 0;
+  border: 0;
+  color: var(--primary-violet);
+  cursor: pointer;
+  font-size: 2rem;
+  transition: all 0.3s;
+  box-shadow: 2px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+button:hover {
+  background-color: var(--primary-magenta);
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  padding: 0 10rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.soc-med-icon {
+  margin-left: auto;
+  margin-top: auto;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.soc-med-icon .fab {
+  width: 20px;
+  height: 100%;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  padding: 1rem;
+  vertical-align: center;
+  text-align: center;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.soc-med-icon .fab:hover {
+  border-color: var(--primary-magenta);
+  color: var(--primary-magenta);
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    font-family: var(--font-body);
+    background: var(--primary-violet) url(./images/bg-mobile.svg) no-repeat;
+    background-size: contain;
+    overflow-x: hidden;
+  }
+  header {
+    /* background-color: slateblue; */
+    padding: 2rem 3rem;
+  }
+
+  header img {
+    /* background-color: slateblue; */
+    width: 12rem;
+  }
+
+  main {
+    flex-direction: column;
+    /* background-color: rebeccapurple; */
+    justify-content: center;
+    align-items: center;
+    padding: 3rem;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  main img {
+    width: 100%;
+    height: auto;
+  }
+
+  .hero-content {
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-top: 4rem;
+  }
+
+  button {
+    padding: 1rem 8rem;
+    border-radius: 50px;
+    font-size: 1.6rem;
+  }
+
+  footer {
+    padding: 5rem 10rem;
+  }
+
+  .soc-med-icon {
+    margin: 0 auto;
+    font-size: 1.2rem;
+    gap: 1rem;
+  }
+
+  .soc-med-icon .fab {
+    width: 12px;
+    height: 100%;
+  }
 }

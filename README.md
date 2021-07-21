@@ -22,7 +22,9 @@ Users should be able to:
 ### Screenshot
 
 ![](./screenshot/desktop.png)
-![](./screenshot/mobile.png)
+
+<div style="text-align: center"><img src="./screenshot/mobile.png" alt="mobile design"></div>
+<!-- ![](./screenshot/mobile.png) -->
 
 ### Links
 

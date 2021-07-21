@@ -111,7 +111,7 @@ footer {
   color: var(--primary-magenta);
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1024px) {
   body {
     font-family: var(--font-body);
     background: var(--primary-violet) url(./images/bg-mobile.svg) no-repeat;
